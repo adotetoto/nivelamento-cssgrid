@@ -1,10 +1,22 @@
 .container {
   display: grid;
+
   /*
-    valor flexivel para definir elementos no grid
-    ou seja ele pega o valor do container e divide FRAÇÕES DESTE TAMANHO para os itens
+    repeat 
+      - 1 valor = quantas vezes repetir
+      - 2 valor = repetir o que ? 
+      - 3 valor = repetir o que ? ... infinitamente
+
+
+     exemplo de repeate
+      grid-template-columns: 100px repeat(3, 1fr) 200px;
   */
-  grid-template-columns: 1fr 1fr 1fr;
+  /*
+  auto fill utilizado para quando não se sabe o numero de colunas lembrando que é necessário usar px
+
+*/
+  grid-template-columns: repeat(auto-fill, 300px);
+
   gap: 10px;
 }
 .item {
