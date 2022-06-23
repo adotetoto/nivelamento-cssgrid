@@ -1,16 +1,21 @@
 .container {
+  background-color: #ccc;
+  height: 800px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: minmax(150px, auto);
+  gap: 10px;
 
   /*
-  grid-auto-rows : define um valor padrão para as colunas,definir com px é um problema,pois se há um texto maior que  o item vai cortar 
+    content -> movimenta só o conteudo ou seja pense que o conteudo esta dentro de uma div e vai movendo ela dentro do container
 
-  para corrigir o problema acima utiliza se o minmax como auto que vai ajustar a pena a linha que estourou o container
 
-*/
-  grid-auto-rows: minmax(150px, auto);
+    items -> move os itens,modificando sua estrutura no caso por semplo o seu tamanho e largura PADRAO É STRETCH que pega de ponta a ponta
+  */
 
-  gap: 10px;
+  justify-content: center;
+  align-items: end;
+  justify-items: start;
 }
 .item {
   background-color: #0000ff;
