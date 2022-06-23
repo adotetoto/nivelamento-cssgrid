@@ -1,12 +1,25 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
   /*
-    FORMA SINTATICA DE DEFINIR O GAP
-      column-gap: 10px;
-      row-gap: 10px;
+    auto -> utilizado para definir um tamanho automatico para um item ou seja pegue o tamanho que sobrou
+
+    definindo coluna -> basicamente cada valor passado em grid-template-columns vai ser uma coluna
+
   */
-  gap: 10px 10px; /*1 - linha 2- coluna*/
+  grid-template-columns: auto 100px 100px 100px;
+
+  /*
+    - semelhante ao grid-template-columns,porem so vai aplicar estilo nas linhas definidas
+    
+    - cada valor passado representa uma linha 
+
+
+  */
+
+  grid-template-rows: 100px 200px;
+
+  gap: 10px;
 }
 .item {
   background-color: #0000ff;
