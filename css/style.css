@@ -1,21 +1,14 @@
 .container {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
   /*
-    repeat 
-      - 1 valor = quantas vezes repetir
-      - 2 valor = repetir o que ? 
-      - 3 valor = repetir o que ? ... infinitamente
+  grid-auto-rows : define um valor padrão para as colunas,definir com px é um problema,pois se há um texto maior que  o item vai cortar 
 
-
-     exemplo de repeate
-      grid-template-columns: 100px repeat(3, 1fr) 200px;
-  */
-  /*
-  auto fill utilizado para quando não se sabe o numero de colunas lembrando que é necessário usar px
+  para corrigir o problema acima utiliza se o minmax como auto que vai ajustar a pena a linha que estourou o container
 
 */
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: minmax(150px, auto);
 
   gap: 10px;
 }
