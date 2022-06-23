@@ -1,2 +1,1 @@
-# nivelamento-cssgrid
-Repositorio destinado ao estudo sobre CSS GRID
+# O que é css grid
