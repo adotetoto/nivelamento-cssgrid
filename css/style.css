@@ -1,24 +1,10 @@
 .container {
   display: grid;
-
   /*
-    auto -> utilizado para definir um tamanho automatico para um item ou seja pegue o tamanho que sobrou
-
-    definindo coluna -> basicamente cada valor passado em grid-template-columns vai ser uma coluna
-
+    valor flexivel para definir elementos no grid
+    ou seja ele pega o valor do container e divide FRAÇÕES DESTE TAMANHO para os itens
   */
-  grid-template-columns: auto 100px 100px 100px;
-
-  /*
-    - semelhante ao grid-template-columns,porem so vai aplicar estilo nas linhas definidas
-    
-    - cada valor passado representa uma linha 
-
-
-  */
-
-  grid-template-rows: 100px 200px;
-
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
 .item {
